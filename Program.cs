@@ -127,10 +127,11 @@ namespace Csharp_fundamentals_exercises02
             Console.WriteLine("enter a series of numbers separated by comma:\n(For example, if the user enters “5, 3, 8, 1, 4\", the program should display 8)\n");
             input = Console.ReadLine();
             var numbers = input.Split(',');
-            max = Convert.ToInt32(numbers[0]);
+            var num =Convert.ToInt32(numbers[0]);
+            max = num;
             foreach (string number in numbers)
             {
-                var num = Convert.ToInt32(number);
+                 num = Convert.ToInt32(number);
                 if (num > max) max = num;
             }
             Console.WriteLine("The max number is {0}.", max);
