@@ -47,7 +47,7 @@ namespace Csharp_fundamentals_exercises02
             target = 100;
             for (float i = (float)from; i <= (float)target; i++)
             {
-                if(i%3 == 0) counter++;
+                if(i % 3 == 0) counter++;
             }
             Console.WriteLine("The amount of numbers divisible by 3 is {0}.",counter);
         }
@@ -91,7 +91,7 @@ namespace Csharp_fundamentals_exercises02
             {
                 factorial = factorial * (BigInteger)i;
             }
-            Console.WriteLine("The factorial of this number is {0}.", factorial);
+            Console.WriteLine("The factorial of this number ({0}!) is {1}.",input, factorial);
         }
         static void task04()
         {
